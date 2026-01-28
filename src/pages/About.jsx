@@ -70,7 +70,7 @@ const About = () => {
                 className="relative rounded-3xl overflow-hidden shadow-2xl"
               >
                 <motion.img
-                  src="/about-profile.png"
+                  src={`${import.meta.env.BASE_URL}about-profile.png`}
                   alt="VinodKumar G"
                   className="w-full h-auto object-cover rounded-3xl"
                   initial={{ opacity: 0, scale: 0.95 }}

@@ -78,7 +78,7 @@ const Header = ({ activeSection }) => {
               </button>
             ))}
             <a
-              href="/vinodkumar2025docx.pdf"
+              href={`${import.meta.env.BASE_URL}vinodkumar2025docx.pdf`}
               download
               className="px-6 py-2 bg-black dark:bg-white text-white dark:text-black rounded-full text-sm font-medium hover:opacity-80 transition-opacity"
             >
@@ -134,7 +134,7 @@ const Header = ({ activeSection }) => {
               </button>
             ))}
             <a
-              href="/vinodkumar2025docx.pdf"
+              href={`${import.meta.env.BASE_URL}vinodkumar2025docx.pdf`}
               download
               className="block w-full text-center btn-primary mt-2"
             >

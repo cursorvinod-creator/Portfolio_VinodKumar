@@ -68,7 +68,7 @@ const Home = () => {
                 {/* Profile image container - Apple style with larger size */}
                 <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden">
                   <motion.img
-                    src="/profile-image.png"
+                    src={`${import.meta.env.BASE_URL}profile-image.png`}
                     alt="VinodKumar G - Software Developer"
                     className="w-full h-full object-cover"
                     initial={{ scale: 1.1, opacity: 0 }}
@@ -133,7 +133,7 @@ const Home = () => {
               className="flex flex-col sm:flex-row gap-4 items-start"
             >
               <motion.a
-                href="/vinodkumar2025docx.pdf"
+                href={`${import.meta.env.BASE_URL}vinodkumar2025docx.pdf`}
                 download
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
