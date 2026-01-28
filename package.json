@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://USERNAME.github.io/Portfolio_VinodKumar" ,
+  "homepage": "https://USERNAME.github.io/Portfolio_VinodKumar",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
