@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="VinodKumar Portfolio - Experienced .NET Developer proficient in ASP.NET Core, React.js, MySQL, SQL Server, and Node.js" />
+    <meta name="keywords" content="VinodKumar, .NET Developer, ASP.NET Core, React.js, Full Stack Developer, Software Engineer" />
+    <meta name="author" content="VinodKumar G" />
+    <meta property="og:title" content="VinodKumar Portfolio - Software Developer" />
+    <meta property="og:description" content="Experienced .NET Developer with expertise in ASP.NET Core, React.js, and modern web technologies" />
+    <meta property="og:type" content="website" />
+    <title>VinodKumar Portfolio - Software Developer</title>
+    <script>
+      // Apply theme immediately to prevent flash
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else if (!savedTheme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

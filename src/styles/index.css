@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white dark:bg-black text-gray-900 dark:text-gray-100;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32;
+  }
+  
+  .section-title {
+    @apply text-5xl md:text-6xl lg:text-7xl font-semibold text-black dark:text-white mb-6 tracking-tight;
+    letter-spacing: -0.02em;
+  }
+  
+  .section-subtitle {
+    @apply text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-16 font-light;
+    letter-spacing: -0.01em;
+  }
+  
+  .btn-primary {
+    @apply px-8 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-medium hover:opacity-80 transition-all duration-300 text-base;
+  }
+  
+  .btn-secondary {
+    @apply px-8 py-3 bg-transparent text-black dark:text-white border border-gray-300 dark:border-gray-700 rounded-full font-medium hover:bg-gray-100 dark:hover:bg-gray-900 transition-all duration-300 text-base;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-black rounded-2xl transition-all duration-300 p-8 border border-gray-100 dark:border-gray-900;
+  }
+  
+  /* Floating animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Pulse glow animation */
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(14, 165, 233, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(14, 165, 233, 0.8);
+    }
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+}
+
+/* Smooth scroll animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
